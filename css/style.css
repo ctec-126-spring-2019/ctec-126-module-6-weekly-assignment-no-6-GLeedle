@@ -3,38 +3,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url(../img/metal.jpg);
+    background-size: cover;
+    background-position: center;  
+    color: #d1d1d1; 
 }
+
 
 #container {
     width: 100vw;
-    margin: 20px 0 0 0;
     display: grid;
     grid-template-columns: repeat(6, minmax(110px, 200px));
     grid-template-rows: auto;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    
 }
 
 #actions {
     height: 30px;
     margin: 20px 10px;
+    
 }
 
 img {
     width: 100px;
-    border-radius: 8px;
-    box-shadow: grey 3px 3px 3px;
+    border-radius: 8px;    
+    background-color: rgba(255, 255, 255, 0.877);
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.8);
+    transition: 1s ease;
+    cursor: pointer;
 }
 
-button {
-    background: blueviolet;
-    color: white;
-    border: 1px solid #dadada;
-    padding: 5px 10px;
-    opacity: 1;
-    transition: 0.3s;
-    margin-right: 10px;
+img:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 button:hover {

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CTEC 126 - Cards 2020</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTEC 126 - Cards 2020</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
+<body>
+    <div class="container-fluid text-center p-5 m-5">
+
         <h1>CTEC 126 Cards - Weekly Assignment No. 6</h1>
-        <button id="shuffle">Shuffle</button>
-        <button id="remove">Remove a Card</button>
-        <button id="newdeck">New Deck</button>
-        <button id="showfaces">Show Card Faces</button>
-        <button id="showbacks">Show Card Backs</button>
+
+        <button class="btn btn-success" id="newdeck">New Deck</button>
+        <button class="btn btn-primary" id="shuffle">Shuffle</button>
+        <button class="btn btn-danger" id="remove">Remove a Card</button>
+        <button class="btn btn-info" id="showfaces">Show Card Faces</button>
+        <button class="btn btn-info" id="showbacks">Show Card Backs</button>
+
         <div id="actions">Click on a card to turn it over.</div>
         <div id="container"></div>
-        <script src="js/script.js"></script>
-    </body>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
 
 </html>
